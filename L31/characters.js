@@ -3,10 +3,10 @@ let roles =["mage", "support", "assassin"," adc"," tank"];
 class Character{
     name = '';
     role = '';
-    armor;
-    damage;
+    armor ;
+    damage = 100;
 
-    constructor(name, role,armor = 100 ,damage = 100) {
+    constructor(name, role,armor = 100 ,damage) {
         this.name = name;
         this.role = role;
         this.armor = armor;
@@ -70,6 +70,5 @@ class Adc extends Character {
     }
 }
 
-let mari = new Support('mari')
-let lika = new Adc('lika')
-console.log(lika.attackDamage(), mari.healingStatus())
+let j = new Character('mar','k')
+console.log(j)
